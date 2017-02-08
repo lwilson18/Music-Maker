@@ -1,5 +1,5 @@
 # Music-Maker
-Program for generating music, with accompanying sheet music and audio.
+Program for randomly generating music, with accompanying sheet music and audio.
 Pydub downloaded from https://github.com/jiaaro/pydub, piano samples used with permission.
 
 To run, download all files into one directory, and simply run MusicMaker.py.
