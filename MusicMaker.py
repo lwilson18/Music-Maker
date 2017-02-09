@@ -13,8 +13,6 @@ MIDI support, more time signatures, variable tempo, different instrument samples
 """
 import os
 from random import *
-import pip
-pip.main(["install","PIL"])
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
