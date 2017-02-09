@@ -13,6 +13,8 @@ MIDI support, more time signatures, variable tempo, different instrument samples
 """
 import os
 from random import *
+import pip
+pip.main(["install","Pillow"])
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
@@ -229,7 +231,10 @@ class Treble(object) :
         self._o=70 #Reset staff start
         
         #Key signature
-        font = ImageFont.truetype('/Library/Fonts/Arial.ttf', 18)
+        if os.name == 'posix' :
+            font = ImageFont.truetype('/Library/Fonts/Arial.ttf', 18)
+        elif os.name == 'nt' :
+            font = ImageFont.truetype('arial.ttf', 18)
         if key == "G" :
             self._n.text((30,self._o-9),"#",fill=self._black,font=font)
             self._music_start = 55 #initial position
