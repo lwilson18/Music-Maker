@@ -4,7 +4,7 @@ Author: Logan Wilson
 
 This program includes methods for generating melodies, displaying melodies
 via sheet music, and playing melodies within a homophonic texture.
-Pydub, treble clef.png, as well as folders containing Piano Samples,
+Python Imaging Library, Pydub, treble clef.png, as well as folders containing Piano Samples,
 Major Chords, and Minor Chords, are all required.
 
 Future developments: More key signature options, incidental notes, GUI for
@@ -13,8 +13,6 @@ MIDI support, more time signatures, variable tempo, different instrument samples
 """
 import os
 from random import *
-import pip
-pip.main(["install","Pillow"])
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
